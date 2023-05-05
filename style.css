@@ -1,0 +1,194 @@
+body {
+  background: linear-gradient(to bottom, azure, grey);
+  font-family: 'Bruno Ace SC', cursive;
+  overflow: auto;
+
+}
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px grey;
+  color: black;
+}
+
+
+header h3 {
+  
+  margin: 0;
+  margin-right: 200px;
+
+}
+
+label {
+
+  font-size: 1.5rem;
+  display: block; 
+  margin-bottom: 15px;
+
+}
+
+#contenedor {
+    text-align: center;
+    width: 97%;
+    height: 80%;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    padding: 1.5%;
+    max-width: 960px;
+    margin: auto;
+    box-shadow: 0 0 10px gray;
+    
+}
+
+
+#inputText {
+  
+    width: 100%;
+    font-size: 15px;
+    border-radius: 15px; 
+    box-shadow: 10px 10px 10px grey;
+    padding: 20px; 
+    background: transparent;
+
+
+
+}
+
+#botones-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+
+#botonEncriptar, #botonDesencriptar  {
+  
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: azure;
+  background: rgb(85, 129, 248);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px grey;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+
+#botonEncriptar:hover, #botonDesencriptar:hover {
+
+  transform: scale(1.1);
+  box-shadow: 0 2px gray;
+
+}
+
+
+#inputCode{
+  
+  width: 100%;
+  border-radius: 15px; 
+  box-shadow: 10px 10px 10px grey;
+  padding: 10px; 
+  background: transparent;
+
+}
+
+#botonCopiar{
+  
+  display: inline-block;
+  justify-content: center;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: azure;
+  background: rgb(85, 129, 248);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px grey;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+
+#botonCopiar:hover  {
+
+  transform: scale(1.1);
+  box-shadow: 0 2px gray;
+
+}
+
+
+#botonBorrar{
+  
+  display: inline-block;
+  justify-content: center;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  color: azure;
+  background: rgb(85, 129, 248);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px grey;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+
+#botonBorrar:hover  {
+
+  transform: scale(1.1);
+  box-shadow: 0 2px gray;
+
+}
+
+#mensaje, #mensajeborrado {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+  animation-name: mensajeAnimado;
+  animation-duration: 2s;
+}
+
+@keyframes mensajeAnimado {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
