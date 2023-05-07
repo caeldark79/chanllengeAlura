@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Metadatos del documento -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-    <title>Challenge Alura Encriptación </title>
+    <!-- Título de la página -->
+    <title>Challenge Alura Encriptación</title>
 	
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">	
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8fff2fcec9.js" crossorigin="anonymous"></script>
+
+    <!-- Script de encriptación -->
+    <script src="encriptador.js"></script>
+    
   </head>
 
   <body>
+    <!-- Encabezado de la página -->
     <header> 
       <h1><img src="assets/logo.png" alt="Logo del Encriptador"></h1>
       <h2 class ="tituloPrincipal"> Challenge Encriptador</h2>
       <h3><img src="assets/logo-aluraespanhol.svg" alt="Logo de Alura"></h3>
     </header>	
 
+    <!-- Contenedor principal -->
     <main id="contenedor">
 
+      <!-- Sección superior -->
       <section id="panelup">
         <div class="up">
           <label for="inputText">Ingrese texto o Código:</label>
@@ -36,28 +47,30 @@
         
       </section>
 	
+      <!-- Sección inferior -->
       <section id="panelDown">
         <div class="down">
           <label for="inputText">El Resultado del texto o Código es:</label>
           <textarea id="inputCode" placeholder="El Código encriptado o desencriptado aparecerá aquí" readonly></textarea>
+        <div id="botonesContainer2">  
           <button id="botonCopiar" onclick="copiar()">Copiar</button>
           <button id="botonBorrar" onclick="borrar()">Borrar</button>
+        </div>  
           <span id="mensaje"></span>
           <span id="mensajeborrado"></span>
 
         </div>
       </section>
 
-      <section id="resultado">
-        
-        <p id="resultado"></p>
+      </main>
 
-
-      </section>
-
-
-    </main>
-
-    <script src="encriptador.js"></script>
+  <footer>
+    <h4>Contacto</h4>
+        <section class="redesSociales">
+        <a href="https://github.com/caeldark79/chanllengeAlura"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/cristian-gutierrez-coordti/"><i class="fab fa-linkedin"></i></a>
+        </section>
+    </div>
+  </footer>
   </body>
 </html>

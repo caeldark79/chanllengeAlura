@@ -42,49 +42,48 @@ label {
 }
 
 #contenedor {
-    text-align: center;
-    width: 97%;
+
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%, -2%);
+    width: 50%;
     height: 80%;
-    padding: 30px 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    border-radius: 10px;
+    gap: 50px;
     padding: 1.5%;
-    max-width: 960px;
-    margin: auto;
-    box-shadow: 0 0 10px gray;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px grey;
     
 }
 
 
 #inputText {
   
-    width: 100%;
-    font-size: 15px;
-    border-radius: 15px; 
-    box-shadow: 10px 10px 10px grey;
-    padding: 20px; 
-    background: transparent;
-
-
+  width: 326px;
+  height: 46px;
+  font-size: 16px;
+  border-radius: 20px; 
+  box-shadow: 10px 5px 10px grey;
+  padding: 20px; 
+  background: transparent;
 
 }
 
 #botones-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 
 #botonEncriptar, #botonDesencriptar  {
   
   display: inline-block;
-  padding: 20px 30px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
   color: azure;
   background: rgb(85, 129, 248);
@@ -98,7 +97,7 @@ label {
 
 #botonEncriptar:hover, #botonDesencriptar:hover {
 
-  transform: scale(1.1);
+  transform: scale(1.2);
   box-shadow: 0 2px gray;
 
 }
@@ -106,22 +105,29 @@ label {
 
 #inputCode{
   
-  width: 100%;
-  border-radius: 15px; 
-  box-shadow: 10px 10px 10px grey;
-  padding: 10px; 
+  width: 326px;
+  height: 46px;
+  font-size: 16px;
+  border-radius: 20px; 
+  box-shadow: 10px 5px 10px grey;
+  padding: 20px; 
   background: transparent;
 
 }
 
-#botonCopiar{
+#botonescontainer2 {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+#botonCopiar, #botonBorrar{
+  
   
   display: inline-block;
-  justify-content: center;
-  padding: 20px 30px;
-  font-size: 18px;
+  padding: 10px 20px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 0 10px;
   color: azure;
   background: rgb(85, 129, 248);
   border: none;
@@ -132,33 +138,7 @@ label {
 }
 
 
-#botonCopiar:hover  {
-
-  transform: scale(1.1);
-  box-shadow: 0 2px gray;
-
-}
-
-
-#botonBorrar{
-  
-  display: inline-block;
-  justify-content: center;
-  padding: 20px 30px;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 0 10px;
-  color: azure;
-  background: rgb(85, 129, 248);
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px grey;
-  transition: all 0.5s ease-out;
-  cursor: pointer;
-}
-
-
-#botonBorrar:hover  {
+#botonCopiar:hover, #botonBorrar:hover  {
 
   transform: scale(1.1);
   box-shadow: 0 2px gray;
@@ -190,5 +170,20 @@ label {
   100% {
     transform: translateY(0);
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent !important;
+  padding: 20px 0;
+}
+
+.redesSociales {
+
+  display:inline-block;
+  
+
 }
 
